@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, rgb(78, 10, 107), rgb(27, 4, 37));
+  min-height: 100vh;
+}
+section {
+  font-size: 1.7rem;
+  color: rgb(137, 10, 192);
+}
+section,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+}
+form button {
+  color: rgb(91, 40, 115);
+  background-color: rgb(33, 2, 47);
+  transition: 2s all ease;
+}
+form button:hover {
+  background-color: rgb(91, 40, 115);
+  color: rgb(33, 2, 47);
+}
