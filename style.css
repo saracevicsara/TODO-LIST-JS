@@ -28,7 +28,7 @@ form button {
 form button {
   color: rgb(91, 40, 115);
   background-color: rgb(33, 2, 47);
-  transition: 2s all ease;
+  transition: 0.5s all ease;
 }
 form button:hover {
   background-color: rgb(91, 40, 115);
