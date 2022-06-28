@@ -70,3 +70,10 @@ form button:hover {
   background-color: rgb(33, 2, 47);
   color: rgb(91, 40, 115);
 }
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
