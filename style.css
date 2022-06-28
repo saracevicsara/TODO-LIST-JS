@@ -34,3 +34,39 @@ form button:hover {
   background-color: rgb(91, 40, 115);
   color: rgb(33, 2, 47);
 }
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo li {
+  flex: 1;
+}
+.trash-btn,
+.complete-btn {
+  background-color: rgb(91, 40, 115);
+  color: rgb(33, 2, 47);
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+.trash-btn:hover,
+.complete-btn:hover {
+  background-color: rgb(33, 2, 47);
+  color: rgb(91, 40, 115);
+}
