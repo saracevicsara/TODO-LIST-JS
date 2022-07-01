@@ -4,7 +4,7 @@ const todobutton = document.querySelector(".todo-button");
 const todolist = document.querySelector(".todo-list");
 const filteroption = document.querySelector(".filter-todo");
 //EVENT LISTENERS
-document.addEventListener("DOMContentLoaded", gettodos());
+window.addEventListener("DOMContentLoaded", gettodos);
 todobutton.addEventListener("click", addTodo);
 todolist.addEventListener("click", deletecheck);
 filteroption.addEventListener("click", filtertodo);
@@ -84,7 +84,7 @@ function filtertodo(e) {
 
 function savelocaltodos(todo) {
   let todos;
-  if (localStorage.getItem("todos") == null) {
+  if (localStorage.getItem("todos") === null) {
     todos = [];
   } else {
     todos = JSON.parse(localStorage.getItem("todos"));
@@ -132,5 +132,6 @@ function removeLocalTodos(todo) {
   }
   const todoindex = todo.children[0].innerText;
   todos.splice(todos.indexOf(todoindex), 1);
-  localStorage.setItem(todos, JSON.stringify(todos));
+  localStorage.setItem("todos", JSON.stringify(todos));
 }
+// localStorage.clear();
